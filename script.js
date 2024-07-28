@@ -12,7 +12,7 @@ let poster = document.getElementById("poster");
 
 // API
 let apiKey = "2fa0df07";
-let apiBaseUrl = "http://www.omdbapi.com/?apikey=" + apiKey + "&t=";
+let apiBaseUrl = "https://www.omdbapi.com/?apikey=" + apiKey + "&t=";
 
 function searchMovie() {
   let movieName = document.getElementById("movieName");
