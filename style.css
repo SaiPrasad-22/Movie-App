@@ -11,8 +11,6 @@ body {
   width: 700px;
   margin: 30px auto;
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
 }
 
 input {
@@ -23,7 +21,6 @@ input {
   background-color: rgba(134, 134, 134, 0.205);
   border: none;
   border-radius: 2px;
-  margin-left: 2%;
 }
 
 input:focus {
@@ -31,19 +28,14 @@ input:focus {
 }
 
 .btn {
-  width: 15%;
-  height: 100%;
-  font-size: 15px;
+  width: 20%;
   border: none;
   border-radius: 2px;
   background-color: rgb(229, 9, 20);
   color: white;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  position: absolute;
-  margin-right: 2%;
-  right: 0;
-  top: 0;
 }
 
 .btn:hover {
@@ -58,12 +50,8 @@ input:focus {
   color: rgba(255, 255, 255, 0.884);
 }
 
-.movie-box p {
-  margin-left: 2%;
-}
 .movie-box img {
   width: 50%;
-  margin-right: 2%;
 }
 
 .mg0 {
@@ -91,4 +79,49 @@ p span {
   color: rgba(255, 255, 255, 0.925);
   padding: 10px; /* Optional: Add some padding for better appearance */
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for visual depth */
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .container {
+    width: 80vw;
+    font-size: 14px;
+  }
+
+  .movie-box {
+    flex-direction: column-reverse;
+    width: 80vw;
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 80vw;
+    font-size: 12px;
+  }
+
+  .movie-box {
+    flex-direction: column-reverse;
+    width: 80vw;
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
 }
