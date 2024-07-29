@@ -93,7 +93,12 @@ p span {
     flex-direction: column-reverse;
     width: 80vw;
     font-size: 14px;
+    align-items: center;
   }
+  .movie-box img {
+    margin-bottom: 5%;
+  }
+
   .btn {
     font-size: 14px;
   }
@@ -114,7 +119,12 @@ p span {
     flex-direction: column-reverse;
     width: 80vw;
     font-size: 12px;
+    align-items: center;
   }
+  .movie-box img {
+    margin-bottom: 5%;
+  }
+
   .btn {
     font-size: 12px;
     font-weight: bold;
@@ -123,5 +133,17 @@ p span {
   .footer {
     position: relative;
     bottom: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 70vw;
+    font-size: 10px;
+  }
+  .btn {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
   }
 }
